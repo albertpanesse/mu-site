@@ -10,6 +10,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Dashboard from './pages/dashboard';
+import Signin from './pages/signin';
 
 const PrivateRoute = ({ element }: any) => {
   const { authState }: any = useContext(AuthContext);
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },
-      { path: "contact", element: <Contact /> }
+      { path: "contact", element: <Contact /> },
+      { path: "signin", element: <Signin /> }
     ],
   },
   {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const Home: React.FC = () => {
         <p className="lead">Optimizing one single page for your profile and portfolios.</p>
         <hr className="my-4" />
         <p>Sign up today and start publishing your profile.</p>
-        <a className="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+        <Link to={'/signin'} className="btn btn-primary btn-lg" role="button">Get Started</Link>
       </div>
     </div>
   );

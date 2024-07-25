@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function Login() {
+const Signin: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:3000/auth/login', {
@@ -47,6 +47,6 @@ function Login() {
       </form>
     </div>
   );
-}
+};
 
-export default Login;
+export default Signin;
